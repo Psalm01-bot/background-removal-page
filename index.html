@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Removal Tool</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">BgRemover</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <h1>Remove Background from Images</h1>
+      <p>Upload an image to remove its background instantly.</p>
+      
+      <div class="upload-section">
+        <input type="file" id="imageUpload" accept="image/*" hidden>
+        <label for="imageUpload" class="upload-btn">Choose Image</label>
+        <span id="fileName"></span>
+      </div>
+
+      <div class="result-section">
+        <h2>Result</h2>
+        <div id="resultContainer">
+          <img id="processedImage" src="" alt="Processed Image">
+        </div>
+        <a id="downloadBtn" href="#" download="processed_image.png" class="download-btn">Download Image</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <h3>Pricing Plans</h3>
+      <div class="pricing-plans">
+        <div class="plan">
+          <h4>$0 Plan</h4>
+          <p>Free for basic usage</p>
+        </div>
+        <div class="plan">
+          <h4>$10 Plan</h4>
+          <p>Premium features</p>
+        </div>
+        <div class="plan">
+          <h4>$30 Plan</h4>
+          <p>Unlimited access</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
